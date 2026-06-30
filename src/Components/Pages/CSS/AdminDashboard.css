@@ -1,0 +1,119 @@
+.admin-dashboard {
+  padding: 120px 5% 60px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.admin-header h1 {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.admin-header p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-content p {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.stat-content h3 {
+  font-size: 24px;
+  color: var(--primary);
+  margin: 0;
+}
+
+.stat-trend {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 12px;
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.admin-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.action-card {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.action-card:hover {
+  transform: translateX(10px);
+  border-color: var(--accent);
+}
+
+.action-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: var(--primary);
+}
+
+.action-info h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.action-info p {
+  color: var(--text-light);
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .admin-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .admin-header { flex-direction: column; text-align: center; gap: 20px; }
+  .admin-stats-grid { grid-template-columns: 1fr; }
+  .admin-actions-grid { grid-template-columns: 1fr; }
+}

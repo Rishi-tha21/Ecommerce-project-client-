@@ -1,0 +1,23 @@
+.myorders { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+.myorders h1 { font-size: 32px; margin-bottom: 30px; color: var(--text-dark); text-align: center; }
+.myorders-empty { text-align: center; padding: 60px 20px; margin-top: 40px; }
+.myorders-empty p { font-size: 20px; color: var(--text-light); margin-bottom: 20px; }
+.myorders-list { display: flex; flex-direction: column; gap: 24px; }
+.myorders-card { 
+  padding: 24px; 
+  transition: transform 0.3s; 
+}
+.myorders-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.myorders-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+.order-id { font-weight: 700; font-size: 16px; color: var(--text-dark); }
+.order-date { color: var(--text-light); font-size: 13px; margin-top: 4px; }
+.order-status { padding: 6px 14px; border-radius: 20px; color: white; font-size: 13px; font-weight: 600; }
+.myorders-items { border-top: 1px solid rgba(0,0,0,0.05); padding-top: 15px; display: flex; flex-direction: column; gap: 8px; }
+.myorders-item { display: flex; justify-content: space-between; color: var(--text-dark); font-size: 14px; }
+.myorders-footer { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05); font-size: 14px; color: var(--text-light); align-items: center; }
+.order-total { font-weight: 700; color: var(--accent); font-size: 18px; }
+
+@media (max-width: 600px) {
+  .myorders-header { flex-direction: column; gap: 10px; }
+  .order-status { align-self: flex-start; }
+}

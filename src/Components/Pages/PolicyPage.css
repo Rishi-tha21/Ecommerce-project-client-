@@ -1,0 +1,46 @@
+.policy-page {
+  padding: 120px 5% 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.policy-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.policy-header h1 {
+  font-size: 42px;
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.policy-header h1::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.policy-content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.policy-content section h2 {
+  font-size: 22px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.policy-content section p {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 16px;
+}

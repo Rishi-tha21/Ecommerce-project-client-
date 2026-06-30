@@ -1,0 +1,9 @@
+.wishlist { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.wishlist h1 { font-size: 32px; margin-bottom: 30px; color: #171717; text-align: center; }
+.wishlist-empty { text-align: center; padding: 80px 20px; }
+.wishlist-empty p { font-size: 18px; color: #888; margin-bottom: 8px; }
+.wishlist-empty button { padding: 14px 32px; background: #ff4141; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 20px; }
+.wishlist-products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+@media (max-width: 1024px) { .wishlist-products { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .wishlist-products { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .wishlist-products { grid-template-columns: 1fr; } }
